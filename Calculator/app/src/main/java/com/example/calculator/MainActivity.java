@@ -11,7 +11,7 @@ import static android.view.View.OnClickListener;
 public class MainActivity extends AppCompatActivity {
     private EditText Scr;
     private ButtonClickListener bttnClick;
-    private double NumberBF;
+    private double NumberBf;
     private String operation;
 
     @Override
@@ -22,8 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
         Scr = (EditText) findViewById(R.id.tvResult);
         Scr.setEnabled(false);
-        int ViewList[] = {R.id.subtract, R.id.nine, R.id.eight, R.id.seven, R.id.clear, R.id.six, R.id.five, R.id.four, R.id.three, R.id.two, R.id.one, R.id.one, R.id.subtract, R.id.posneg
-                R.id.equals, R.id.add, R.id.multiply, R.id.divid};
+        int ViewList[] = {R.id.subtract, R.id.nine, R.id.eight, R.id.seven,
+                R.id.clear, R.id.six, R.id.five, R.id.four, R.id.three, R.id.two, R.id.one,
+                R.id.one, R.id.subtract,R.id.equals, R.id.add, R.id.multiply, R.id.divid};
 
         for (int bttn : ViewList)
         {
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             {
                 case R.id.clear:
                     Scr.setText("0");
-                    NumberBF = 0;
+                    NumberBf = 0;
                     operation = "";
                     break;
                 case R.id.add:
@@ -55,55 +56,15 @@ public class MainActivity extends AppCompatActivity {
                     MathFunction("*");
                     break;
                 case R.id.one:
-                    String num1;
-                    num1 = ((Button)v).getText().toString();
-                    InputNumber(num1);
-                    break;
                 case R.id.two:
-                    String num2;
-                    num2 = ((Button)v).getText().toString();
-                    InputNumber(num2);
-                    break;
                 case R.id.three:
-                    String num3;
-                    num3 = ((Button)v).getText().toString();
-                    InputNumber(num3);
-                    break;
                 case R.id.four:
-                    String num4;
-                    num4 = ((Button)v).getText().toString();
-                    InputNumber(num4);
-                    break;
                 case R.id.five:
-                    String num5;
-                    num5 = ((Button)v).getText().toString();
-                    InputNumber(num5);
-                    break;
                 case R.id.six:
-                    String num6;
-                    num6 = ((Button)v).getText().toString();
-                    InputNumber(num6);
-                    break;
                 case R.id.seven:
-                    String num7;
-                    num7 = ((Button)v).getText().toString();
-                    InputNumber(num7);
-                    break;
                 case R.id.eight:
-                    String num8;
-                    num8 = ((Button)v).getText().toString();
-                    InputNumber(num8);
-                    break;
                 case R.id.nine:
-                    String num9;
-                    num9 = ((Button)v).getText().toString();
-                    InputNumber(num9);
-                    break;
                 case R.id.zero:
-                    String num0;
-                    num0 = ((Button)v).getText().toString();
-                    InputNumber(num0);
-                    break;
                 case R.id.equals:
                     mathResult();
                     break;
@@ -115,18 +76,26 @@ public class MainActivity extends AppCompatActivity {
         }//onclick
         public void MathFunction(String str)
         {
-
+            NumberBf = Float.parseFloat(Scr.getText().toString());
+            operation= str;
+            Scr.setText("0");
         }
         public void mathResult()
         {
-
+            float NumAf = Float.parseFloat(Scr.getText().toString());
+            double result = 0;
+            if (operation.equals("+"))
+            {
+                result = NumberBf + NumAf;
+            }
+            Scr.setText(String.valueOf(result));
         }
         public void InputNumber(String str)
         {
             String valueEntered = Scr.getText().toString();
             if(valueEntered.equals("0"))
             {
-                valueEntered = "0";
+                valueEntered = "";
             }else
             {
                 valueEntered += str;
