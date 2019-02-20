@@ -26,7 +26,7 @@ public class TipCalc extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState); // call superclass onCreate
-        setContentView(R.layout.activity_main); // inflate the GUI
+        setContentView(R.layout.tipcalc); // inflate the GUI
 
         // get references to programmatically manipulated TextViews
         amountTextView = (TextView) findViewById(R.id.amountTextView);
