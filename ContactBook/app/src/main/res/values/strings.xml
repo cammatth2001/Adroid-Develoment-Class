@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ContactBook</string>
+    <string name="textDisplay">Contacts</string>
+    <string name="Name">Name</string>
+    <string name="Address">Address</string>
+    <string name="Phone">Phone</string>
+    <string name="Save">Save</string>
+    <string name="displayMessage">Data from the sever</string>
+    <string name="DeleteData">Delete</string>
+    <string name="UpdateData">Update</string>
+</resources>
