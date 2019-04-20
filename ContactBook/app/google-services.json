@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "633880500796",
+    "firebase_url": "https://contactbook-ea609.firebaseio.com",
+    "project_id": "contactbook-ea609",
+    "storage_bucket": "contactbook-ea609.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633880500796:android:53fed96967d162d9",
+        "android_client_info": {
+          "package_name": "com.example.contactbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "633880500796-p6fh16kv8jien39jii0niv78vo0hc0ai.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.contactbook",
+            "certificate_hash": "0662a8d4b466e70a4df110e884ac3e12b4cc7f99"
+          }
+        },
+        {
+          "client_id": "633880500796-7jq7f5r9aqahelra5uuvuk5v0rpr0hvf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgSUPCSdnHYpBIdt3I3_chNv42rMIt5tM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "633880500796-7jq7f5r9aqahelra5uuvuk5v0rpr0hvf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
